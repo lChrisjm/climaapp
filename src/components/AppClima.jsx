@@ -5,7 +5,6 @@ import useClima from "../hooks/useClima";
 
 const AppClima = () => {
   const { resultado, loading,noResultado } = useClima();
-  console.log(loading)
 
   return (
     <>
