@@ -1,20 +1,24 @@
-import Formulario from "./Formulario"
-import Resultado from "./Resultado"
-import useClima from "../hooks/useClima"
+import Formulario from "./Formulario";
+import Resultado from "./Resultado";
+import Loading from "./Loading";
+import useClima from "../hooks/useClima";
 
 const AppClima = () => {
-
-  const { resultado } = useClima();
-
+  const { resultado, loading,noResultado } = useClima();
+  console.log(loading)
 
   return (
     <>
-        <main className="dos-columnas">
-            <Formulario />
+      <main className="dos-columnas">
+        <Formulario />
 
-            {resultado?.name && <Resultado/> }
-        </main>
+        {
+        loading ? <Loading /> :
+        resultado?.name ? <Resultado /> :
+        noResultado ?? <p>{noResultado}</p> 
+        }
+      </main>
     </>
-  )
-}
-export default AppClima
+  );
+};
+export default AppClima;
