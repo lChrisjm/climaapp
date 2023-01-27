@@ -1,6 +1,6 @@
 const Loading = () => {
   return (
-    <div className="loading">
+    <div className="loading md:w-1/3 md:min-h-full h-auto">
       <div className="sk-folding-cube">
         <div className="sk-cube1 sk-cube"></div>
         <div className="sk-cube2 sk-cube"></div>
