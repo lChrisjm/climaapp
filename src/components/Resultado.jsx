@@ -5,21 +5,21 @@ const Resultado = () => {
   const { name, main } = resultado;
 
   //Grados Kelvin
-
   const kelvin = 273.15;
 
   return (
-    <div className="contenedor clima">
-      <h2>El Clima de {name} es:</h2>
-      <p>
+    <div className="md:max-xl:w-1/3 md:max-xl:min-h-full h-auto flex flex-col bg-green-50 w-full rounded-md text-center ring-4 ring-green-400 px-6 py-5">
+      <h2 className="font-bold text-xl">{name}:</h2>
+      <p className="text-xl mt-3">
         {parseInt(main.temp - kelvin)} <span>&#x2103;</span>
       </p>
-      <div className="temp_min_max">
-        <p>
-          Mínima: {parseInt(main.temp_min - kelvin)} <span>&#x2103;</span>
+      <div className="flex row justify-center gap-6 mt-4">
+        <p className="flex flex-col font-semibold">
+          Mínima: <span className="text-md font-thin">{parseInt(main.temp_min - kelvin)} <span className="">&#x2103;</span></span>
         </p>
-        <p>
-          Máxima: {parseInt(main.temp_max - kelvin)} <span>&#x2103;</span>
+        <p className="flex flex-col font-semibold">
+          Máxima:
+          <span className="text-md font-thin">{parseInt(main.temp_max - kelvin)} <span>&#x2103;</span></span>
         </p>
       </div>
     </div>
