@@ -8,7 +8,7 @@ const AppClima = () => {
 
   return (
     <>
-      <main className="dos-columnas">
+      <main className="flex grow flex-col  items-center gap-5 px-4 h-fit">
         <Formulario />
 
         {
