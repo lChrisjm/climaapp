@@ -22,7 +22,7 @@ const Formulario = () => {
   };
 
   return (
-    <div className="md:max-xl:w-1/3 bg-green-50 w-full rounded-md text-center ring-4 ring-gray-600 h-auto px-6 py-5">
+    <div className="md:w-1/3 bg-green-50 w-full rounded-md text-center shadow-lg h-auto px-6 py-5">
       {alerta && (
         <p className="block bg-red-400 text-sm text-red-900 py-1 rounded-md">
           {alerta}

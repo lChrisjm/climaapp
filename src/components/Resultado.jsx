@@ -8,7 +8,7 @@ const Resultado = () => {
   const kelvin = 273.15;
 
   return (
-    <div className="md:max-xl:w-1/3 md:max-xl:min-h-full h-auto flex flex-col bg-green-50 w-full rounded-md text-center ring-4 ring-green-400 px-6 py-5">
+    <div className="md:w-1/3 md:min-h-full shadow-lg h-auto flex flex-col bg-green-50 w-full rounded-md text-center ring-4 ring-green-400 px-6 py-5">
       <h2 className="font-bold text-xl">{name}:</h2>
       <p className="text-xl mt-3">
         {parseInt(main.temp - kelvin)} <span>&#x2103;</span>
