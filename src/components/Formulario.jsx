@@ -22,7 +22,7 @@ const Formulario = () => {
   };
 
   return (
-    <div className="bg-green-50 w-full rounded-md text-center ring-4 ring-red-400 h-auto px-6 py-5">
+    <div className="md:max-xl:w-1/3 bg-green-50 w-full rounded-md text-center ring-4 ring-gray-600 h-auto px-6 py-5">
       {alerta && (
         <p className="block bg-red-400 text-sm text-red-900 py-1 rounded-md">
           {alerta}
@@ -68,7 +68,7 @@ const Formulario = () => {
 
         <input
           type="submit"
-          className="bg-green-500 self-end cursor-pointer w-full py-2 rounded-xl text-white font-semibold text-xl"
+          className="bg-green-500  self-end cursor-pointer w-full py-2 rounded-xl border-black border-4 text-white font-semibold text-xl "
           value="Consultar"
         />
       </form>
@@ -76,3 +76,6 @@ const Formulario = () => {
   );
 };
 export default Formulario;
+
+
+
